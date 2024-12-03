@@ -40,16 +40,20 @@ body {
   @apply flex items-center justify-between mb-4;
 }
 
+.my-grid-text-panel {
+  @apply flex-col items-start justify-between mb-4;
+}
+
 .my-standard-text {
   @apply text-xl font-semibold text-gray-600;
 } 
 
 .my-regular-table {
-  @apply overflow-x-auto bg-white shadow-md rounded-lg overflow-hidden min-h-96;
+  @apply overflow-x-auto  shadow-md rounded-lg overflow-hidden min-h-[400px];
 }
 
 .my-regular-table > div {
-  @apply overflow-y-auto max-h-96;
+  @apply overflow-y-auto max-h-[400px];
 }
 
 .my-regular-table table {
@@ -71,3 +75,8 @@ body {
 .my-regular-table tbody td {
   @apply px-6 py-4;
 }
+
+.my-badge {
+  @apply px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full shadow transition;
+}
+
